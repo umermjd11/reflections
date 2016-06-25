@@ -1,2 +1,8 @@
 What happens when you initialize a repository? Why do you need to do it?
 well it will creat a hidden .git folder to do all setup for git repository
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+well because staging area tells what files are to be committed.
+
+How can you use the staging area to make sure you have one commit per logical change?
+well after making logical change we can add it to staging area
