@@ -15,3 +15,6 @@ well i was good
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 because it is so
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+well if merge automatically but if conflict arise it will alert us
