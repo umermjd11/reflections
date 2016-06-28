@@ -8,13 +8,29 @@ How can you use the staging area to make sure you have one commit per logical ch
 well after making logical change we can add it to staging area
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
-well in collobration or adding multiple features extra
+By drawing the diagram you can directly see the relations between commits and branches. This makes it clear where to find specific changes.
 
 How do the diagrams help you visualize the branch structure?
-well i was good
+The result is one branch with changes from both branches
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
-because it is so
+After a merge, all commits will be shown based on the timestamp in git log. This will show the commits from the two different branches running through each other.
+
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
-well if merge automatically but if conflict arise it will alert us
+Automatic merging saves a lot of time compared to doing merges manually, if conflict arise it will alert us
+
+Commands:
+
+git add  |    Add a file to the staging area
+git commit  |    Commit the files from the staging area to the repository
+git status  |    Show which files are in the staging area, and which files from the working directory are not part of the repository
+git diff  |    Git diff without arguments is comparing the working directory with the staging area
+git diff --staged  |    Compare the staging area with the repository
+git reset --hard  |    Undo all changes! There is no rollback for this, so be carefull!
+git checkout master  |    Restore the "Head" to the latest check-in (this will be part of a later lesson/module)
+git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
+git checkout -b new_branch_name  |    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
+git merge branch1 branch2  |    Merge two branches, branch2 get merged into branch1
+git branch -d name  |    Remove the branch with the specified name
+git show commitId  |    Show the changes made in this commit compared to the previous version. This is working even after merging.
