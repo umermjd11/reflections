@@ -9,3 +9,6 @@ fork are copies of repositories from one github account to other, clones are cop
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
 Well you can download remote branch and work on it later while you are offline
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+it will be difficult to merge etc
